@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body {
+    background-color: black;
+}
+@font-face{
+    font-family: moj_font;
+    src:url("font/Arcane\ Nine.otf")
+}
+.header {
+    width: 100%;
+    height:400px;
+    display:flex;
+    align-items: center;
+    background-color: 	#30588C;
+}
+.header img{
+    width:40%;
+    height:400px;
+}
+.header h1{
+    font-family: moj_font;
+    position: absolute;
+    right:500px;
+    font-size:100px;
+    font-style:italic;
+    color:white;
+}
+.navbar{
+    height:40px;
+    background-color:#30588C ;
+    border:2px solid black;
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+
+}
+.navbar ul li{
+    padding-right:15px;
+    font-size:30px;
+}
+.navbar ul li:active{
+    background-color: #A63F8A;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color:white;
+}
+.lidesno{
+    right:5px;
+    position: absolute;
+}
+#aktivno{
+    background-color: blueviolet;
+}
+h1{
+    text-align: center;
+    font-size:40px;
+    color:#A63F8A;
+    font-family: moj_font;
+}
+.sadrzaj {
+    width:100%;
+    height:400px;
+    display:flex;
+
+}
+.sadrzaj a{
+    color:transparent;
+    text-decoration: none;;
+}
+.sadrzaj p{
+    font-family: moj_font;
+    width:80%;
+    color:white;
+    font-size:40px;
+}
+.sadrzaj img{
+    position: absolute;
+    right:45px;
+    height:400px;
+    transition: 2s;
+}
+.sadrzaj img:hover{
+    transition: 2s;
+    transform: rotate(60deg);
+
+}
+p{
+    font-family: moj_font;
+    color:white;
+}
+p:first-letter{
+    text-transform: uppercase;
+    color:red;
+}
+.glavnilikovi {
+    margin-top: 50px;
+}
+.glavnilikovi p{
+    text-align: center;
+}
+.gllik1{
+    margin-left:150px;
+    width:22%;
+    height:500px;
+    display:inline-block;
+    padding-right:40px;
+}
+.gllik1:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.gllik2{
+    width:22%;
+    height:500px;
+    display:inline-block;
+    padding-right:40px;
+}
+.gllik2:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.gllik3{
+    width:22%;
+    height:500px;
+    display:inline-block;
+    padding-right:40px;
+}
+.gllik3:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.gllik4{
+    width:22%;
+    height:500px;
+    display:inline-block;
+    padding-right:40px;
+}
+.gllik4:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.gllik1 img{
+    width:100%;
+    height:80%;
+    border-radius: 10%;
+}
+.gllik2 img {
+    width:100%;
+    height:80%;
+    border-radius: 10%;
+}
+.gllik3 img{
+    width:100%;
+    height:80%;
+    border-radius: 10%;
+}
+.gllik4 img{
+    width:100%;
+    height:80%;
+    border-radius: 10%;
+}
+footer{
+    position: static;
+    bottom:0;
+    width:100%;
+    height:30px;
+    font-size: 25px;
+    background-color: #30588C;
+    color:white;
+    text-align: center;
+}
+@media (max-width:600px) {
+    .header {
+        width: 100%;
+        height:40%;
+        display:flex;
+        align-items: center;
+        background-color: 	#30588C;
+    }
+    .header img{
+        width:40%;
+        height:40%;
+    }
+    .header h1{
+        font-family: moj_font;
+        position: absolute;
+        right:30px;
+        font-size:50px;
+        font-style:italic;
+        color:white;
+    }
+    .navbar{
+        height:30px;
+        background-color:#30588C ;
+        border:2px solid black;
+    }
+    .navbar ul {
+        display: flex;
+        list-style-type: none;
+    
+    }
+    .navbar ul li{
+        padding-right:15px;
+        font-size:20px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar ul li:active{
+        background-color: #A63F8A;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color:white;
+    }
+    .lidesno{
+        right:5px;
+        position: absolute;
+    }
+    #aktivno{
+        background-color: blueviolet;
+    }
+}

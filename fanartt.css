@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html{
+    scroll-behavior:smooth;
+}
+body {
+    background-color: black;
+}
+@font-face{
+    font-family: moj_font;
+    src:url("font/Arcane\ Nine.otf")
+}
+.header {
+    width: 100%;
+    height:400px;
+    display:flex;
+    align-items: center;
+    background-color: 	#30588C;
+}
+.header img{
+    width:40%;
+    height:400px;
+}
+.header h1{
+    font-family: moj_font;
+    position: absolute;
+    right:500px;
+    font-size:100px;
+    font-style:italic;
+    color:white;
+}
+.navbar{
+    height:40px;
+    background-color:#30588C ;
+    border:2px solid black;
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+
+}
+.navbar ul li{
+    padding-right:15px;
+    font-size:30px;
+}
+.navbar ul li:active{
+    background-color: #A63F8A;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color:white;
+}
+.lidesno{
+    right:5px;
+    position: absolute;
+}
+#aktivno{
+    background-color: blueviolet;
+}
+
+.fanartovi{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+    
+}
+.fanjedan img{
+    width:500px;
+    height:400px;
+}
+.fanjedan:hover{
+    animation: pomeranje 2s ease-in-out;
+}
+.fandva img{
+    width:500px;
+    height:400px;
+}
+.fandva:hover{
+    animation: pomeranjedole 2s ease-in-out;
+}
+.fantri img{
+    width:500px;
+    height:400px;
+}
+.fantri:hover{
+    animation: pomeranjedesno 2s ease-in-out;
+}
+@keyframes pomeranje {
+
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+    
+}
+@keyframes pomeranjedole {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+@keyframes pomeranjedesno {
+
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width:600px) {
+    .header {
+        width: 100%;
+        height:40%;
+        display:flex;
+        align-items: center;
+        background-color: 	#30588C;
+    }
+    .header img{
+        width:40%;
+        height:40%;
+    }
+    .header h1{
+        font-family: moj_font;
+        position: absolute;
+        right:30px;
+        font-size:50px;
+        font-style:italic;
+        color:white;
+    }
+    .navbar{
+        height:30px;
+        background-color:#30588C ;
+        border:2px solid black;
+    }
+    .navbar ul {
+        display: flex;
+        list-style-type: none;
+    
+    }
+    .navbar ul li{
+        padding-right:15px;
+        font-size:20px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar ul li:active{
+        background-color: #A63F8A;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color:white;
+    }
+    .lidesno{
+        right:5px;
+        position: absolute;
+    }
+    #aktivno{
+        background-color: blueviolet;
+    }
+    
+    .fanartovi{
+        width:100%;
+        display:block;
+        justify-content: space-evenly;
+        margin-top:20px;
+        
+    }
+    .fanjedan img{
+        width:100%;
+        height:40%;
+    }
+    .fanjedan:hover{
+        animation: pomeranje 2s ease-in-out;
+    }
+    .fandva img{
+        width:100%;
+        height:40%;
+    }
+    .fandva:hover{
+        animation: pomeranjedesno 2s ease-in-out;
+    }
+    .fantri img{
+        width:100%;
+        height:40%;
+    }
+    .fantri:hover{
+        animation: pomeranjedole 2s ease-in-out;
+    }
+}
